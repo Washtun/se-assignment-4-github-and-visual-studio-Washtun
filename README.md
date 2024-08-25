@@ -17,18 +17,18 @@ GitHub is the single largest host for Git repositories, and is the central point
 
     - **Pull Requests**: Contributors can notify you of changes they’ve pushed to a repository. You can easily merge accepted changes.<br>
     
-    - **Discussions**: Dedicated space for community interaction, questions, and open-ended conversations.
-    <br>
-    - **Code Review**: Review new code, see visual changes, and merge confidently with automated checks.
-    <br>
+    - **Discussions**: Dedicated space for community interaction, questions, and open-ended conversations.<br>
+    
+    - **Code Review**: Review new code, see visual changes, and merge confidently with automated checks.<br>
+      
      - **Code Owners**: Automatically request reviews from specific contributors for code sections they own.
-     <br>
+       
     - **Draft Pull Requests**: Collaborate without formal review or risking unwanted merges.
-    <br>
+      
     - **Protected Branches**: Enforce restrictions on branch merges.
-    <br>
+
     - **Team Reviewers**: Request team reviews for pull requests.
-    <br>
+      
     - **Multiple Assignees and Reviewers** : Assign work and request reviews from multiple people.
     
 3. **Automation & CI/CD**:
@@ -238,8 +238,8 @@ Inside it, define a YAML file (e.g., ci-cd.yml) for your workflow.
 
  name: CI/CD Pipeline <br>
 
- on:<br>
-   push:<br>
+on:<br>
+  push:<br>
     branches:<br>
       - main<br>
 
@@ -252,13 +252,13 @@ jobs:<br>
         uses: actions/checkout@v2<br>
 <br>
       - name: Install dependencies<br>
-        run: yarn install
+        run: yarn install<br>
 <br>
       - name: Run tests<br>
-        run: yarn test
+        run: yarn test<br>
 <br>
       - name: Build Docker image<br>
-        run: docker build -t my-app .
+        run: docker build -t my-app.<br>
 <br>
       - name: Push Docker image<br>
         run: docker push my-app
